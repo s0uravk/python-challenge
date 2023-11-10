@@ -1,10 +1,4 @@
 import csv
-def vote_count():
-    count = 0
-    if((candidates[rows[1]][0]) in rows[2]):
-        count += 1
-
-        return count
 
 #input file path
 file_in = "election_data.csv"
