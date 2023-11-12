@@ -1,6 +1,6 @@
 import csv
-import os
 
+#input file path
 election_data_csv = r'python-challenge\PyPoll\Resources\election_data.csv'
 # declaring dictionary to store values for candidates and there total votes
 candidatesNvotes= {}
