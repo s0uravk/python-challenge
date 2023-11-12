@@ -9,7 +9,7 @@ PyBank summarize the financial data and outputs essential parts of analysis such
 
 This script requires the input data file to be formatted in a specific order with months as first value and here profit/loss as second value seprated by a comma. it could be another delimiter instead of a commas but then script will require a minor change to perform the analysis.
 
-Pypoll main.py file, upon execution, retrieve the data form election_dat.csv file, process it and showcase the results in terminal and create an output file in analysis folder in PyBank folder.
+Pypoll main.py file, upon execution, retrieve the data form budget_dat.csv file, process it and showcase the results in terminal and create an output file in analysis folder in PyBank folder.
 
 **PyPoll**
 
