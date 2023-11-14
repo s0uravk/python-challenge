@@ -19,7 +19,7 @@ PyPoll outputs the results of an election with essential such as total votes as 
 
 This script requires the data being proccessed to be in a specific format with name of candidates as third value in a csv file  and listed as many times as total votes have been cast to them in each row on third place. 
 
-PyPank main.py file, upon execution , retrieves the data form election_data.csv file, process it and showcase the results in terminal and also creates a result.txt file in analysis folder in PyPoll folder.
+PyPoll main.py file, upon execution , retrieves the data form election_data.csv file, process it and showcase the results in terminal and also creates a result.txt file in analysis folder in PyPoll folder.
 
 References : 
 
