@@ -9,7 +9,7 @@ PyBank summarize the financial data and outputs essential parts of analysis such
 
 This script requires the input data file to be formatted in a specific order with months as first value and here profit/loss as second value seprated by a comma. it could be another delimiter instead of a commas but then script will require a minor change to perform the analysis.
 
-Pypoll main.py file, upon execution, retrieves the data form budget_data.csv file, process it and showcase the results in terminal and also creates a result.txt file in analysis folder in PyBank folder.
+PyBank main.py file, upon execution, retrieves the data form budget_data.csv file, process it and showcase the results in terminal and also creates a result.txt file in analysis folder in PyBank folder.
 
 **PyPoll**
 
@@ -19,4 +19,19 @@ PyPoll outputs the results of an election with essential such as total votes as 
 
 This script requires the data being proccessed to be in a specific format with name of candidates as third value in a csv file  and listed as many times as total votes have been cast to them in each row on third place. 
 
-PyBank main.py file, upon execution , retrieves the data form election_data.csv file, process it and showcase the results in terminal and also creates a result.txt file in analysis folder in PyPoll folder.
+PyPank main.py file, upon execution , retrieves the data form election_data.csv file, process it and showcase the results in terminal and also creates a result.txt file in analysis folder in PyPoll folder.
+
+References : 
+
+![Screenshot 2023-11-14 180018](https://github.com/s0uravk/python-challenge/assets/144293972/976dabf5-3d0a-4e93-b684-b8aa38f8074e)
+
+The code i used to create a dictionary with the candidate's names as keys and there vote counts as values was inspired from Instructor Piro's snippet, when i asked him regarding the assignment and he shared the following snippet.
+
+        if row[1] in candidatesNvotes:
+             if row[2] not in candidatesNvotes[row[1]]:
+                candidatesNvotes[row[1]].append([row[2]])            
+        else:
+             candidatesNvotes[row[1]] = [row[2]]
+Which creates a dictionary with County as keys and coressponding candidate's list in as values. Whereas, my code find the candidate in dictionary and if not found adds them as a key and assign value 1 for first instance and add 1 to it's value if same candidate is found again in row[2].
+
+Please adjust the filepath  accordingly to fetch the .csv file and return the .txt file.
