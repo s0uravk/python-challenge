@@ -44,7 +44,7 @@ with open(election_data_csv, newline='') as csvfile:
     winner = [i for i in candidatesNvotes if candidatesNvotes[i] == max(candidatesNvotes.values())]
   
     print("---------------------------------------------------------------------------------------------------")
-    print(f"Winner : {winner[0]} ({win_votes :.2%}) ")
+    print(f"Winner : {winner[0]} ({win_votes :.3%}) ")
     
 #creating an output file path  
 outFile = r'python-challenge\PyPoll\Output\result.txt'
@@ -58,10 +58,10 @@ with open(outFile,'w') as output_data :
     writer.writerow(["---------------------------------------------------------------------------------------------------"])
     for candidate in candidatesNvotes :
         vote_percent = candidatesNvotes[candidate]/sum(candidatesNvotes.values())
-        writer.writerow([f"{candidate} : {vote_percent :3%} ({candidatesNvotes[candidate]})"])
+        writer.writerow([f"{candidate} : {vote_percent :.3%} ({candidatesNvotes[candidate]})"])
     
     writer.writerow(["---------------------------------------------------------------------------------------------------"])
-    writer.writerow([f"Winner : {winner[0]} : ({win_votes :.2%}) "])
+    writer.writerow([f"Winner : {winner[0]} : ({win_votes :.3%}) "])
     writer.writerow(["---------------------------------------------------------------------------------------------------"])
 
 
