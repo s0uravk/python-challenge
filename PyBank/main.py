@@ -2,7 +2,7 @@ import csv
 import os
 
 #input file path
-filein = r"python-challenge-main\PyBank\Resources\budget_data.csv"
+filein = r"python-challenge\PyBank\Resources\budget_data.csv"
 
 #declaring required variables
 months = []
@@ -62,7 +62,7 @@ print(f"Best Month : {grt_profit_month} (${grt_profit})")
 print(f"Worst Month : {grt_loss_month} (${grt_loss})")
 
 #creating an output file path 
-fileout = r"python-challenge-main\PyBank\Output\analysis.txt"
+fileout = r"python-challenge\PyBank\Output\analysis.txt"
 
 #manipulation of result
 with open (fileout, 'w') as output_data :
