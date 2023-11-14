@@ -10,7 +10,7 @@ vote_percent=0
 win_votes= 0
 
 #open the csv file
-with open(election_data_csv, newline='') as csvfile:
+with open(election_data_csv, 'r') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
 
     #skip the header
