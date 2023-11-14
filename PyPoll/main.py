@@ -24,7 +24,7 @@ with open(election_data_csv, newline='') as csvfile:
                                                  #name and assign value for that first iteration
                                                               
         else:                                     #checking for candidate's name in dictionary 
-            candidatesNvotes[row[2]] += 1         #if name is found, adds one to the value of that key
+            candidatesNvotes[row[2]] += 1         #if name is found, adds one to the value if that candidate is found in row[2]
 
     #output data to terminal        
     print("Election Results : ")
