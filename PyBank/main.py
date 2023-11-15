@@ -46,11 +46,12 @@ with open(filein, 'r') as input_data:
 avg_change = round(sum(changes_pNl)/(counter_month-1),2)   #calculate average change, chnages occured 85 times hence subtracting one from total months
 grt_profit = max(changes_pNl)                              #calculate greatest positive change
   
-grt_profit_month = months[changes_pNl.index(grt_profit)+1]   #finding month for greatest positive change
+grt_profit_month = months[changes_pNl.index(grt_profit)+1]   #finding month for greatest positive change, adding 1 to index as months list have 86 values, i.e 1 value more than chnanges_pNl.
 
 grt_loss = min(changes_pNl)                               #calculate greatest negative change
 
-grt_loss_month = months[changes_pNl.index(grt_loss)+1]        #calculate greatest negative chang
+grt_loss_month = months[changes_pNl.index(grt_loss)+1]        #calculate greatest negative change, adding 1 to index as months list have 86 values, i.e 1 value more than chnanges_pNl.
+
 
 #output data to terminal  
 print("Financial Analysis")     
